@@ -1,0 +1,124 @@
+.mion{
+    margin: .3rem auto;
+    width: 95%;
+    min-height: 60vh;
+    background: #fff;
+    direction: rtl;
+    position: relative;
+}
+.mi{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.pal{
+    font-size: 1.2rem;
+    color: rebeccapurple;
+    font-family: 'XSANS',Tahoma,Sans-Serif;
+}
+.box{
+    width: 100%;
+   
+}
+.pname{
+    font-size: 1rem;
+    font-family: 'XSANS',Tahoma,Sans-Serif;
+}
+.div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 1rem;
+}
+
+
+.brande{
+    width: 100%;
+    min-height: 30vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    transition: all 1s ease-in-out;
+}
+
+.imgmianbar{
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: all 1s ease-in-out;
+}
+
+
+.ptxt{
+    font-size: 1rem;
+    color: #111;
+    transition: all 1s ease-in-out;
+    font-family: 'XSANS',Tahoma,Sans-Serif;
+}
+.branding{
+    
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+}
+
+.branding:hover ,.imgmianbar:hover , .ptxt:hover{
+    opacity: .6;
+}
+
+
+.padd{
+    padding: .4rem .6rem;
+    color: #707070;
+    font-size: 1.3;
+    margin: 0 auto;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.padd::before{
+    content: "<";
+    position: absolute;
+    top: 20%;
+    left: -.6rem;
+    transform: rotate(90deg);
+    color:royalblue;
+    font-size: 1.2rem;
+    
+}
+
+.brandes{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    direction: rtl;
+    
+}
+.brandess{
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    direction: rtl;
+    
+}
+
+.items{
+    padding: 1.6rem;
+    font-family: 'XSANS',Tahoma,Sans-Serif;
+    white-space: nowrap;
+    text-decoration: none;
+    font-size: .9rem;
+    color: #5e5e5e;
+}
+@media (max-width:1149) {
+    .mion{
+        display: none;
+    }
+}

@@ -1,20 +1,26 @@
-import React from 'react';
-import Home from './container/Home';
-import Navigationitems from './componnent/navigation/navigationitems/navigationitems';
-import {Switch,Route} from 'react-router-dom';
+import React, { useState } from 'react';
+import Header from './Component/Header/Header';
+import Navigation from './Component/Navigation/Navigation';
+import SearchBar from './Component/Searchbar/SearchBar';
+import Searchbar from './Component/Searchbar/SearchBar';
+import Lauoyt from './Container/Layout/Layout';
+import Drawerres from './responsive/Drawerres/Drawerres';
+import Headerres from './responsive/Headerres/Headerres';
+import NavigationItem from './responsive/NavigationItem/NavigationItem';
+
 function App(){
+  const [bolean,setbol]=useState(false);
+  const [drw,setdrw]=useState(false);
 
-
-  return(
-    <div>
-      
-      <Switch>
-
-      <Route path="/" render={()=><Home></Home>}/>
-      
-      </Switch>
-      
+  return bolean?<SearchBar setbol={setbol}/>:<div style={{position:'relative'}}>
+     
+    {/* <Searchbar/> */}
+    <Header setbol={setbol}/>
+    <Lauoyt/>
+    <Headerres setbol={setbol} setdrw={setdrw}/>
+    <NavigationItem/>
+    {drw?<Drawerres setdrw={setdrw}/>:null}
     </div>
-  )
+  
 }
 export default App;

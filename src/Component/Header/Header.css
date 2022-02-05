@@ -1,0 +1,102 @@
+.head{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.header{
+    width: 70%;
+    position: relative;
+    background: transparent;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #bbbbbb;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 4rem;
+    height: 4rem;
+}
+.anim{
+    width: 26rem;
+    margin-right: -6rem;
+}
+.searchbx{
+    margin-top: .7rem;
+    width: 20rem;
+    height: 2rem;
+    padding: .2rem .5rem;
+    display: flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f0f0;
+    border-bottom: 2px solid #bcebe7;
+    animation: cl forwards 1s;
+}
+
+.tool{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.auth{
+    width: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.vrod{
+    font-size: 1rem;
+    margin-left: .4rem;
+    white-space: nowrap;
+    padding: .3rem ;
+    transition: all 1s ease;
+}
+.vrod:hover{
+    background: #f0f0f0;
+    cursor: pointer;
+}
+.agahi{
+    font-size: 1rem;
+    margin-right: .4rem;
+    position: relative;
+    white-space: nowrap;
+    padding: .3rem ;
+    transition: all 1s ease;
+}
+.agahi:hover{
+    background: #f0f0f0;
+    cursor: pointer;
+}
+.agahi::after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: -1rem;
+    width: 2px;
+    height: 1rem;
+    background: black;
+}
+
+@keyframes cl{
+    from{
+        margin-left:6rem ;
+    }
+    to{
+        margin-right:2rem ;
+    }
+}
+
+@media (max-width:1150px){
+    .head{
+        display: none;
+    }
+}

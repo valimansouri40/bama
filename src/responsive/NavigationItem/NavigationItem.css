@@ -1,0 +1,54 @@
+.full{
+    width: 100%;
+    height: 70vh;
+    background: #ffffff;
+}
+.navi{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.par{
+    color: #bbbbbb;
+    font-size: 1.1rem;
+    transition: all 1s ease;
+    cursor: pointer;
+    width: 25%;
+    height: 100%;
+    border-bottom:1px solid #727272 ;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+.paractive{
+    color: #ee44a8;
+    font-size: 1.2rem;
+    width: 25%;
+    text-align: center;
+    height: 100%;
+    transition: all 1s ease;
+    cursor: pointer;
+    border-bottom:1px solid #ee44a8 ;
+    transition: all 1s ease-in-out;
+
+}
+.items{
+    width: 100%;
+    min-height: 60vh;
+ 
+}
+
+.borders{
+    padding: 1.2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 1px solid #727272;
+    color: #727272;
+}
+@media (min-width:1149px){
+    .full{
+        display: none;
+    }
+}
