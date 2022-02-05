@@ -14,7 +14,7 @@ function App(){
 
   return bolean?<SearchBar setbol={setbol}/>:<div style={{position:'relative'}}>
      
-    {/* <Searchbar/> */}
+    
     <Header setbol={setbol}/>
     <Lauoyt/>
     <Headerres setbol={setbol} setdrw={setdrw}/>
